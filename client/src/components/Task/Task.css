@@ -1,0 +1,77 @@
+.task {
+    padding: 5px;
+    border-bottom: 1px solid var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-title {
+    width: 100%;
+    margin-left: 10px;
+    overflow-x: auto;
+}
+
+.task-title-done {
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+    text-decoration: line-through;
+}
+
+.task-title-input {
+    font-size: 15px;
+    width: 100%;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.task-actions .task-edit-btn-done {
+    display: none;
+}
+
+.task button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--light);
+}
+
+.task-icon-save {
+    font-size: 26px;
+    color: var(--success);
+}
+.task-icon-save:hover {
+    font-size: 26px;
+    color: var(--success2);
+}
+
+.task-icon-edit {
+    font-size: 26px;
+    color: var(--info);
+}
+.task-icon-edit:hover {
+    color: var(--info2);
+}
+
+.task-icon-delete {
+    font-size: 26px;
+    color: var(--danger);
+}
+.task-icon-delete:hover {
+    color: var(--danger2);
+}
+
+.task-edit-btn-done {
+    display: none;
+}

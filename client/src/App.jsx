@@ -1,11 +1,12 @@
-import TaskList from "./components/TaskList";
+import Header from './components/Header';
+import Container from './components/Container';
+import './index.css';
 
-function App() {
+export default function App() {
   return (
     <>
-      <TaskList />
+      <Header />
+      <Container />
     </>
-  )
+  );
 }
-
-export default App;
