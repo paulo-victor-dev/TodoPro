@@ -3,6 +3,7 @@
 :root {
     --primary: #0cc1e0;
     --primary2: #0ca7c3;
+    --secondary: #dfdfdf;
     --danger: #d24242;
     --danger2: #b43939;
     --info: #497feb;
@@ -11,7 +12,6 @@
     --success2: #299936;
     --dark: #000;
     --light: #fff;
-
     --shadow: #00000075;
 }
 
@@ -19,6 +19,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
 

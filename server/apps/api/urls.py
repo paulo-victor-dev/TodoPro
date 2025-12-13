@@ -1,6 +1,9 @@
 from django.urls import path, include
 
 urlpatterns = [
+    # Auth urls
+    path('', include('apps.authentication.urls')),
+
     # Apps urls
-    path('api/v1/', include('apps.task.urls')),
+    path('', include('apps.task.urls')),
 ]

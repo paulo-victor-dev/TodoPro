@@ -7,6 +7,7 @@ export default function TaskAdd({ onChange }) {
 
     async function onSubmit(e) {
         e.preventDefault();
+        if (!inputValue) return;
         await createTask({ title: inputValue });
         setInputValue('')
         onChange();

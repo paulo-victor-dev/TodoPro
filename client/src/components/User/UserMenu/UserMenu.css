@@ -1,0 +1,55 @@
+.user-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+
+    width: auto;
+    min-width: 120px;
+
+    padding: 5px;
+    top: 25px;
+    right: 0;
+
+    border-radius: 10px;
+
+    color: var(--dark);
+    background-color: var(--light);
+    box-shadow: 0 0 8px 0 var(--shadow);
+
+    transform: translateY(-10px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.user-menu.active {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+
+    transform: translateY(10px);
+}
+
+.user-menu ul {
+    width: 100%;
+}
+.user-menu ul li {
+    border-radius: 6px;
+    transition: background-color 0.1s;
+}
+.user-menu ul li:hover {
+    background-color: var(--secondary);
+}
+
+.user-menu ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding: 5px;
+    gap: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--dark);
+    background-color: transparent;
+}

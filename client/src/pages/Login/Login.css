@@ -1,0 +1,122 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 var(--shadow);
+}
+
+.login-form .logo {
+    font-size: 30px;
+
+    > img {
+        width: 40px;
+    }
+}
+
+.title-area, .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title-area .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title-area .subtitle {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.input-area {
+    gap: 10px;
+}
+
+.username-area, .password-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.username-title, .password-title {
+    font-weight: 500;
+}
+
+.input-username, .input-password {
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid var(--shadow);
+    border-radius: 8px;
+}
+
+.input-area button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 100%;
+    padding: 8px;
+    gap: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+
+    text-shadow: 0 0 3px var(--shadow);
+    color: var(--light);
+    background-color: var(--primary);
+}
+.input-area button:hover {
+    background-color: var(--primary2);
+}
+
+.register-area .register-title {
+    margin-right: 6px;
+}
+
+.register-area .register-link {
+    color: var(--primary);
+    text-shadow: 0 0 1px var(--shadow);
+}
+.register-area .register-link:hover {
+    text-decoration: underline;
+}
+
+.login-form .footer {
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.input-username.error, .input-password.error {
+    border: 2px solid var(--danger);
+}
+
+.error-area {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--light);
+    background-color: var(--danger);
+}

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo {
+    font-size: 40px;
+
+    > img {
+        width: 60px;
+    }
+}
+
+.notfound-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.notfound-link {
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--light);
+    background-color: var(--primary);
+    text-shadow: 0 0 4px var(--shadow);
+    transition: background-color 0.2s;
+}
+
+.notfound-link:hover {
+    background-color: var(--primary2);
+}
