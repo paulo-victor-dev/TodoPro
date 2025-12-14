@@ -1,12 +1,21 @@
-.container {
+.notfound-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    margin-top: 50px;
 }
 
-.logo {
+.notfound-logo {
     font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > .notfound-logo-partial {
+        color: var(--primary);
+    }
 
     > img {
         width: 60px;

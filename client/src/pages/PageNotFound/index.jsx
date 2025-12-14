@@ -3,10 +3,10 @@ import "./PageNotFound.css";
 
 export default function PageNotFound() {
     return (
-        <div className="container">
-            <div className="logo">
+        <div className="notfound-container">
+            <div className="notfound-logo">
                 <img src="public\favicon.png"/>
-                Todo<span className='logo-partial'>Pro</span>
+                Todo<span className='notfound-logo-partial'>Pro</span>
             </div>
 
             <span className="notfound-title">Ops... Parece que essa página não existe.</span>

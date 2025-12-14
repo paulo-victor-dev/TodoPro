@@ -7,10 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend": "cd.. && cd server && venv\\Scripts\\activate && python manage.py runserver",
+    "frontend": "npm run dev",
+    "all": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "dependencies": {
     "axios": "^1.13.2",
+    "concurrently": "^9.2.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.10.1"
