@@ -43,33 +43,41 @@ Este é um projeto de **Lista de Tarefas (To-Do List)** desenvolvido com uma arq
 ```
 cd server
 ```
-**2.** Crie e ative um ambiente virtual:
+**2.** Crie um ambiente virtual:
 ```
 python -m venv venv
+```
+**3.** Ative o ambiente
+```
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
-**3.** Instale as dependências:
+**4.** Instale as dependências:
 ```
 pip install -r requirements.txt
 ```
-**4.** Rode as migrações:
+**5.** Crie o arquivo .env a partir do arquivo de exemplo:
+```
+cp .env.example .env    # Linux
+copy .env.example .env  # Windows (cmd)
+```
+**6.** Rode as migrações:
 ```
 python manage.py migrate
 ```
-**5.** Crie um superusuário (opcional):
+**7.** Crie um superusuário (opcional):
 ```
 python manage.py createsuperuser
 ```
-**6.** Acesse a pasta do frontend (client):
+**8.** Acesse a pasta do frontend (client):
 ```
 cd client
 ```
-**7.** Instale as dependências:
+**9.** Instale as dependências:
 ```
 npm install
 ```
-**8.** Execute o comando:
+**10.** Execute o comando:
 ```
 npm run all
 ```

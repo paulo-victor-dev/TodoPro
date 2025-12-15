@@ -24,8 +24,7 @@ export async function loginUser(userData) {
 export async function logoutUser(refreshTokenData) {
     const response = await api.post('logout/', refreshTokenData);
 
-    localStorage.setItem('access', '');
-    localStorage.setItem('refresh', '');
+    localStorage.clear();
 
     return response.data;
 }
